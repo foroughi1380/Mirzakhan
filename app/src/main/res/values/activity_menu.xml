@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="activity_menu_start_button">شروع</string>
+    <string name="activity_menu_download_button">در حال دانلد</string>
+    <string name="activity_menu_min_score_text">حد اقل امتیاز</string>
+    <string name="activity_menu_min_error_download_level">خطا در دریافت فایل ها از سمت سرور!!!!</string>
+    <string name="activity_menu_min_error_score">امتیاز ناکافی</string>
+</resources>

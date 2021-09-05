@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:background="#F0E8C4"
+                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <!--mirza animation-->
+    <com.airbnb.lottie.LottieAnimationView android:layout_width="60dp"
+                                           android:layout_height="wrap_content"
+                                           app:lottie_autoPlay="true"
+                                           android:id="@+id/r"
+                                           android:layout_centerInParent="true"
+                                           android:layout_marginRight="-20dp"
+                                           app:lottie_fileName="r.json"/>
+
+    <com.airbnb.lottie.LottieAnimationView android:layout_width="60dp"
+                                           android:layout_height="wrap_content"
+                                           android:layout_centerVertical="true"
+                                           app:lottie_autoPlay="true"
+                                           android:id="@+id/i"
+                                           android:layout_marginRight="-25dp"
+                                           android:layout_toLeftOf="@id/r"
+                                           app:lottie_fileName="i.json"/>
+
+    <com.airbnb.lottie.LottieAnimationView android:layout_width="70dp"
+                                                       android:layout_gravity="bottom"
+                                                       android:layout_height="wrap_content"
+                                                       app:lottie_autoPlay="true"
+                                                       android:paddingTop="9dp"
+                                                      android:layout_centerVertical="true"
+                                                       android:id="@+id/m"
+                                                        android:layout_toLeftOf="@id/i"
+                                                       android:layout_marginRight="-30dp"
+                                                       app:lottie_fileName="m.json"/>
+
+                <com.airbnb.lottie.LottieAnimationView android:layout_width="60dp"
+                                                       android:layout_height="wrap_content"
+                                                       app:lottie_autoPlay="true"
+                                                       android:id="@+id/z"
+                                                       android:layout_marginRight="-20dp"
+                                                       android:layout_centerVertical="true"
+                                                       android:layout_toRightOf="@id/r"
+                                                       app:lottie_fileName="z.json"/>
+
+                <com.airbnb.lottie.LottieAnimationView android:layout_width="60dp"
+                                                       android:layout_height="wrap_content"
+                                                       app:lottie_autoPlay="true"
+                                                       android:layout_centerVertical="true"
+                                                       android:id="@+id/a"
+                                                       android:layout_toRightOf="@id/z"
+                                                       app:lottie_fileName="a.json"/>
+
+                <!-- progress bar -->
+                <com.airbnb.lottie.LottieAnimationView android:layout_width="300dp"
+                                                       android:layout_height="300dp"
+                                                        app:lottie_fileName="loader1.json"
+                                                        app:lottie_autoPlay="true"
+                                                        app:lottie_loop="true"
+                                                       android:paddingTop="100dp"
+                                                       android:id="@+id/start_view_progress"
+                                                        android:layout_centerInParent="true"/>
+
+
+
+</RelativeLayout>

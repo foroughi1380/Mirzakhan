@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dialog_question_menu_quesiton">سوال</string>
+    <string name="dialog_question_menu_text">متن</string>
+    <string name="dialog_question_text_error">خطا در بارگذاری متن</string>
+    <string name="dialog_question_question_error">خطا در بارگذاری سوال</string>
+    <string name="dialog_question_question_answered">قبلا جواب داده ای</string>
+    <string name="dialog_question_question_submit">تایید</string>
+    <string name="dialog_question_question_title">سوال</string>
+    <string name="dialog_question_question_score">امتیاز شد!!!</string>
+    <string name="dialog_question_question_hint">جواب</string>
+    <string name="dialog_question_question_wrong_answerd">جواب اشتباه</string>
+</resources>

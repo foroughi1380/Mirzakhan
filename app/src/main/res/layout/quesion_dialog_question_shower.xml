@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00000000">
+
+
+
+
+                <LinearLayout android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:gravity="center"
+                                android:layout_centerInParent="true">
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:text="@string/dialog_question_question_title"
+                              android:layout_marginRight="40dp"
+                              android:layout_marginLeft="40dp"
+                              android:layout_centerHorizontal="true"
+                              android:gravity="center"
+                              android:id="@+id/questin_dialog_question_shower_question"/>
+
+                <EditText android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:maxLines="1"
+                            android:id="@+id/question_dialog_question_shower_text"
+                            android:layout_centerInParent="true"
+                            android:hint="@string/dialog_question_question_hint"
+                            android:gravity="center"
+                            android:enabled="false"/>
+
+                <Button android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_submit_shape"
+                        android:text="@string/dialog_question_question_submit"
+                        android:layout_centerInParent="true"
+                        android:paddingRight="20dp"
+                        android:paddingLeft="20dp"
+                        android:textColor="#fff"
+                        android:elevation="1px"
+                        android:id="@+id/question_dialog_question_shower_submit"
+                        android:layout_marginTop="20dp"
+                        android:enabled="false"
+                        />
+
+                </LinearLayout>
+                <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/question_dialog_question_shower_progress"
+                />
+                <TextView android:layout_width="match_parent"
+                          android:layout_height="match_parent"
+                          android:id="@+id/questin_dialog_question_shower_error"
+                          android:background="#B4FFFFFF"
+                          android:text="@string/dialog_question_question_error"
+                          android:gravity="center"
+                          android:textStyle="bold"
+                          android:textSize="18sp"
+                            android:visibility="invisible"/>
+</RelativeLayout>

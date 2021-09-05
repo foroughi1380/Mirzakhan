@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="activity_game_text_btn_show_question">ادامه</string>
+    <string name="activity_game_text_btn_help">کمک</string>
+    <string name="activity_game_score_text_game_board">امتیاز:</string>
+    <string name="activity_game_text_txt_no_title">هیچ</string>
+    <string name="activity_game_text_txt_exit_on_map">خارج محدوده</string>
+    <string name="activity_game_text_txt_faild_to_tacke_pickture">نمیتوانم عکس را بگیرم!</string>
+    <string name="activity_game_text_txt_to_tacke_pickture">عکس ذخیره شد!</string>
+    <string name="activity_game_dialog_error_title">خطا در روند اجرایی</string>
+    <string name="activity_game_dialog_error_button">باشه</string>
+    <string name="activity_game_dialog_title_exit">چند لحظه</string>
+    <string name="activity_game_dialog_message_exit">با این تمام زحمات شما تا این جا به هدر میرود. ایا میخواهید از بازی خارج شوید؟</string>
+    <string name="activity_game_dialog_button_yes_exit">بله</string>
+    <string name="activity_game_dialog_button_no_exit">نه</string>
+    <string name="activity_game_dialog_error_permission_denide">متاسفانه برنامه دسترسی های لازم برای اجرا را ندارد لطفا تمامی  دسترسی ها را به برنامه دهید.</string>
+    <string name="activity_game_dialog_error_provider_status_change">اشکال در دریافت کوقعیت مکانی ! موقعیت مکانی خاموش شده است. لطفا موقعیت مکانی خود را روشن کنید. هنگام رفع مشکل این پیام بسته میشود.</string>
+    <string name="activity_game_dialog_error_faid_load">متاسفانه در بارگذاری اطلاعت مرحله اشکالی به وجود آمده است!</string>
+    <string name="activity_game_dialog_error_provider_not_enable">متاسفانه ما قادر به دریافت اطلاعات مکانی نیستیم لطفا موقعیت مکانی خود به همراه داده تلفن همراه را روشن کنید.</string>
+    <string name="activity_game_dialog_finish_game_message_show">خیلی خشجال هستیم که شما این مرحله را با موفقیت پشت سر گذاشته اید. توجه داشته باشین اگه این مرحله رو قبلا رفته باشید اگر امتیاز شما در این مرحله بیشتر باشد امتیاز بیشتر برای شما ثبت میشود.</string>
+    <string name="activity_game_dialog_finish_game_information_name">نام مرحله</string>
+    <string name="activity_game_dialog_finish_game_information_old_score">امتیاز قبل</string>
+    <string name="activity_game_dialog_finish_game_information_new_score">امتیاز جدید</string>
+    <string name="activity_game_dialog_finish_game_information_count_answered">تعداد پاسخ ها</string>
+    <string name="activity_game_dialog_finish_game_information_count_widgets">تعداد اشیاء پیدا شده</string>
+    <string name="activity_game_dialog_finish_game_submit">تایید</string>
+    <string name="activity_game_dialog_finish_game_title">پایان مرحله</string>
+
+
+</resources>

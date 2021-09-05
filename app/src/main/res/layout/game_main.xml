@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".GameActivity">
+
+
+        <!-- freme layout for show camera-->
+        <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:id="@+id/game_activity_camera_shower"/>
+
+        <!-- only for shadow-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#B2FAFAFA"
+            android:visibility="invisible"
+            android:id="@+id/game_activity_camera_animation"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="400dp"
+                android:elevation="5dp"
+                android:maxLines="2"
+                android:layout_marginHorizontal="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="36dp"
+                android:text="asdfasdfasdfasdfasdf\nasdfasdfasdfasdfasdf"
+                android:background="@drawable/toast_shape"
+                android:id="@+id/game_activity_toast"
+                android:visibility="invisible"
+                android:paddingHorizontal="10dp"/>
+
+        <!-- exit on map text -->
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="400dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="36dp"
+                android:text="@string/activity_game_text_txt_exit_on_map"
+                android:paddingHorizontal="10dp"
+                android:textColor="#202020"
+                android:paddingVertical="1dp"
+                android:alpha="0.9"
+                android:elevation="1dp"
+                android:id="@+id/game_activity_txt_exit_on_map"
+                android:visibility="invisible"
+                android:background="@drawable/circle_rectangle"/>
+
+        <!-- Action bar -->
+        <RelativeLayout android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:background="#ed3e3e3e"
+                        android:id="@+id/game_activity_action_bar"
+                        android:elevation="10px"
+                        >
+            <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/coin"
+                    android:layout_margin="3dp"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/game_activity_icon_coin"
+            />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00000"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/game_activity_icon_coin"
+                    android:textSize="15sp"
+                    android:paddingTop="2dp"
+                    android:textColor="#FCFCFC"
+                    android:id="@+id/game_activity_score_txt"
+                    />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activity_game_text_btn_help"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:textSize="15sp"
+                    android:paddingTop="2dp"
+                    android:textColor="#FCFCFC"
+                    android:layout_marginRight="10dp"
+                    android:elevation="10dp"
+                    android:id="@+id/game_activity_help_btn"
+            />
+
+            <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical"
+                    android:gravity="bottom"
+                    >
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#FCFCFC"
+                        android:textStyle="bold"
+                        android:paddingBottom="3dp"
+                        android:text="@string/activity_game_text_txt_no_title"
+                        android:id="@+id/game_activity_title_txt"/>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#FF9800"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/game_activity_title_line"
+                        android:visibility="invisible"></View>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- Message Box -->
+        <com.github.florent37.shapeofview.shapes.BubbleView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="4dp"
+            app:shape_bubble_borderRadius="10dp"
+            app:shape_bubble_arrowPosition="top"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignTop="@id/game_activity_action_bar"
+            android:id="@+id/game_activity_message_box"
+            android:visibility="invisible">
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#F33E3B3B"
+            android:orientation="vertical"
+
+            >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#FCFCFC"
+                android:text="asdfijasdflkjasdlkfjasldkjflasdjflajsdlfjasldfjl;asdjasdfijasdflkjasdlkfjasldkjflasdjflajsdlfjasldfjl;asdjasdfijasdflkjasdlkfjasldkjflasdjflajsdlfjasldfjl;asdjasdfijasdflkjasdlkfjasldkjflasdjflajsdlfjasldfjl;asdjasdfijasdflkjasdlkfjasldkjflasdjflajsdlfjasldfjl;asdjasdfijasdflkjasdlkfjasldkjflasdjflajsdlfjasldfjl;asdjasdfijasdflkjasdlkfjasldkjflasdjflajsdlfjasldfjl;asdjasdfijasdflkjasdlkfjasldkjflasdjflajsdlfjasldfjl;asdjasdfijasdflkjasdlkfjasldkjflasdjflajsdlfjasldfjl;asdjasdfijasdflkjasdlkfjasldkjflasdjflajsdlfjasldfjl;asdjasdfijasdflkjasdlkfjasldkjflasdjflajsdlfjasldfjl;asdjasdfijasdflkjasdlkfjasldkjflasdjflajsdlfjasldfjl;asdjasdfijasdflkjasdlkfjasldkjflasdjflajsdlfjasldasdfijasdflkjasdlkfjasldkjflasdjflajsdlfjasldfjl;asdjasdfijasdflkjasdlkfjasldkjflasdjflajsdlfjasldfjl;asdjasdfijasdflkjasdlkfjasldkjflasdjflajsdlfjasldfjl;asdjf;laksdjf"
+                android:maxWidth="400dp"
+                android:maxLines="8"
+                android:id="@+id/game_activity_message_txt"
+        />
+        <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pupup_game_activity_shapte"
+                android:layout_margin="5dp"
+                  android:paddingTop="5dp"
+                  android:paddingBottom="5dp"
+                  android:paddingLeft="20dp"
+                  android:paddingRight="20dp"
+                android:id="@+id/game_activity_more_btn"
+                android:text="@string/activity_game_text_btn_show_question"
+                android:textColor="#D0CBC9"/>
+    </LinearLayout>
+
+    </com.github.florent37.shapeofview.shapes.BubbleView>
+
+        <!-- camera -->
+        <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/camera"
+                android:id="@+id/game_activity_icon_camera_btn"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"/>
+
+
+        <!-- finish game layout-->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="20dp"
+                android:background="@drawable/finish_game_backgrand"
+                android:visibility="gone"
+                android:id="@+id/game_activity_finish_game_layout">
+                    <com.airbnb.lottie.LottieAnimationView android:layout_width="200dp"
+                                                   android:layout_height="200dp"
+                                                   android:layout_centerInParent="true"
+                                                   app:lottie_fileName="gift.json"
+                                                   android:id="@+id/game_activity_finish_game_animation"
+                                                    />
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAlignment="center"
+                            android:gravity="center"
+                            android:id="@+id/game_activity_finish_game_infomation"
+                            android:visibility="invisible"
+                            android:text="asdfadsfasdfasdfasdfasdf"/>
+
+                    <TextView android:layout_width="wrap_content"
+                              android:layout_height="wrap_content"
+                              android:textAlignment="center"
+                              android:id="@+id/game_activity_finish_game_message"
+                              android:visibility="invisible"
+                              android:text="@string/activity_game_dialog_finish_game_message_show"
+                              android:gravity="center"/>
+                    <Button android:layout_width="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_submit_shape"
+                            android:textColor="#fff"
+                            android:text="@string/activity_game_dialog_finish_game_submit"
+                            android:visibility="invisible"
+                            android:id="@+id/game_activity_finish_game_submit"/>
+        </LinearLayout>
+</RelativeLayout>

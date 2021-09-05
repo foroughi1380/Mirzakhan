@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:background="#08012A">
+    <!-- animation -->
+    <com.airbnb.lottie.LottieAnimationView  android:layout_width="250dp"
+                                            android:layout_height="250dp"
+                                            app:lottie_fileName="choutte_famille_pricing2.json"
+                                            app:lottie_autoPlay="true"
+                                            app:lottie_loop="true"
+                                            android:layout_centerHorizontal="true"
+                                            android:layout_alignParentBottom="true"
+                                            android:layout_marginBottom="-40dp"/>
+
+        <!-- information panel -->
+        <LinearLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true">
+            <com.github.florent37.shapeofview.shapes.CircleView android:layout_width="100dp"
+                                                                android:layout_height="100dp"
+                                                                >
+                    <ImageView android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                                android:src="@drawable/search"/>
+                    <ImageView android:layout_width="match_parent"
+                               android:layout_height="match_parent"
+                               android:id="@+id/activity_menu_show_level_image"/>
+                    <TextView android:layout_width="match_parent"
+                              android:layout_height="match_parent"
+                              android:background="#E1EDEDED"
+                              android:text="%0"
+                              android:gravity="center"
+                              android:textSize="30dp"
+                              android:visibility="invisible"
+                              android:id="@+id/activity_menu_show_level_image_text"/>
+            </com.github.florent37.shapeofview.shapes.CircleView>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:id="@+id/activity_menu_show_level_name"
+                    android:textColor="#fcfcfc"
+                    />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:scrollbars="vertical"
+                    android:id="@+id/activity_menu_show_level_description"
+                    android:textColor="#fcfcfc"
+                    android:maxLines="10"
+                    />
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:id="@+id/activity_menu_show_level_start_min_score"
+                    android:textColor="#fcfcfc"
+            />
+            <Button android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_submit_shape"
+                    android:text="@string/activity_menu_start_button"
+                    android:textSize="18dp"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#fcfcfc"
+                    android:id="@+id/activity_menu_show_level_start_btn"
+                    />
+        </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/dialog_question_menu_text"
+          android:icon="@android:drawable/button_onoff_indicator_off"/>
+    <item android:title="@string/dialog_question_menu_quesiton"
+          android:icon="@android:drawable/button_onoff_indicator_off"/>
+</menu>

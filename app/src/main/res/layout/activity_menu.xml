@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#2d2d2d"
+        tools:context=".MenuActivity">
+<!--android:background="#08012a"-->
+
+    <!-- score panel-->
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:paddingRight="25dp"
+            android:layout_height="35dp"
+            android:background="@drawable/score_menu_backgrand"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:minWidth="10dp"
+            android:elevation="4dp">
+        <ImageView android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:layout_marginLeft="3dp"
+                   android:src="@drawable/coin"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00000"
+                android:layout_centerVertical="true"
+                android:textSize="15sp"
+                android:paddingTop="2dp"
+                android:textColor="#FCFCFC"
+                android:id="@+id/activity_menu_score_txt"
+                android:layout_marginLeft="2dp"
+        />
+    </LinearLayout>
+
+    <!-- animation view-->
+    <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="galaxy.json"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15sp"
+            android:id="@+id/activity_menu_animation"
+            android:layout_alignParentBottom="true"/>
+
+    <!--menu-->
+    <android.support.v7.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:paddingTop="40dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/activity_menu_menu"
+    >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <!--level view-->
+    <ir.mirzabazi.mirza.LevelView android:layout_width="match_parent"
+                                  android:layout_height="match_parent"
+                                  android:id="@+id/activity_menu_level_view"
+                                        />
+</RelativeLayout>
